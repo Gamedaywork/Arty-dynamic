@@ -1,0 +1,104 @@
+
+body {
+  margin: 0;
+  font-family: 'Open Sans', sans-serif;
+  background: url('background.jpg') no-repeat center center fixed;
+  background-size: cover;
+  color: #000;
+  text-align: center;
+}
+header {
+  padding: 20px;
+  background: rgba(255, 255, 255, 0.9);
+}
+.logo {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+}
+h1 {
+  font-family: 'Playfair Display', serif;
+  font-size: 2.5rem;
+  margin: 10px 0;
+}
+.follow {
+  margin: 10px 0 5px;
+  font-weight: bold;
+}
+.social-icons img {
+  width: 30px;
+  margin: 0 8px;
+}
+nav {
+  margin-top: 10px;
+}
+nav a {
+  color: #000;
+  text-decoration: none;
+  margin: 0 15px;
+  font-weight: bold;
+  font-size: 1rem;
+}
+section {
+  padding: 60px 20px;
+}
+h2 {
+  font-family: 'Playfair Display', serif;
+  font-size: 2rem;
+  border: 2px solid black;
+  display: inline-block;
+  padding: 5px 15px;
+  margin-bottom: 30px;
+}
+.content-box {
+  background: rgba(255, 255, 255, 0.8);
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 30px;
+  border-radius: 10px;
+  text-align: left;
+  line-height: 1.8;
+  font-size: 1rem;
+}
+.gallery-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 20px;
+  max-width: 900px;
+  margin: auto;
+}
+.gallery-grid div {
+  background: rgba(255, 255, 255, 0.8);
+  border-radius: 10px;
+  padding: 10px;
+}
+.gallery-grid img {
+  width: 100%;
+  border-radius: 10px;
+  display: block;
+}
+.gallery-grid p {
+  margin-top: 8px;
+  font-weight: bold;
+}
+.coming-soon {
+  font-size: 1.5rem;
+  margin-top: 40px;
+}
+.email, .address, .thankyou {
+  margin: 20px 0;
+  font-weight: bold;
+}
+.email a {
+  color: purple;
+  text-decoration: underline;
+}
+@media (max-width: 600px) {
+  nav a {
+    display: block;
+    margin: 10px 0;
+  }
+  .gallery-grid {
+    grid-template-columns: 1fr;
+  }
+}
